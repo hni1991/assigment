@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: Arial;
+}
+
+/* main element in normal page size */
+#spec {
+    display: block;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    height: 28rem;
+    width: 36.3rem;
+}
+
+/* style the titel */
+#spec>h2,
+p {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Style the tab */
+.Btn-cont {
+    overflow: hidden;
+    border: .1rem solid #ccc;
+    background-color: #f1f1f1;
+    width: 36.2rem;
+}
+
+/* Style the buttons inside the tab */
+.Btn-cont button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.7rem;
+    width: 12rem;
+    height: 4.8rem;
+}
+
+/* Change background color of buttons on hover */
+.Btn-cont button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active tablink class */
+.Btn-cont button.active {
+    background-color: rgba(99, 0, 238, 0.12);
+    border-bottom: .2rem solid #6100ED;
+    color: #6200EE;
+}
+
+/* Style the tab content */
+.Tab-content {
+    display: none;
+    border: .1rem solid #ccc;
+    width: 36.2rem;
+    height: 12.4rem;
+    align-self: center;
+}
+
+.Tab-content dl {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+    display: table;
+    clear: both;
+    width: 100%;
+    color: #707070;
+
+}
+
+.Tab-content dt {
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding: .25em;
+    clear: left;
+}
+
+.Tab-content dd {
+    float: left;
+    width: 50%;
+    padding: .25em 0;
+}
+
+.Tab-content span {
+    font-size: 2rem;
+    display: block;
+    clear: both;
+    width: 100%;
+    color: #707070;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* responsive  */
+@media screen and (max-width: 768px) {
+    #spec {
+        margin-left: 7%;
+        margin-top: 5rem;
+        height: 28rem;
+        width: 32rem;
+    }
+
+    .Btn-cont {
+        overflow: hidden;
+        width: 32rem;
+        overflow: hidden;
+        background-color: transparent;
+        border: none;
+    }
+
+    .Btn-cont button {
+        background-color: #f1f1f1;
+    }
+
+    .Btn-cont button {
+        border: .1rem solid white;
+        width: 100%;
+    }
+
+    .Tab-content {
+        display: none;
+        width: 32rem;
+        height: 12.4rem;
+        background: white;
+        border: transparent;
+    }
+
+    .Tab-content span {
+        font-size: 2rem;
+        display: block;
+        clear: both;
+        width: 100%;
+        color: #707070;
+        text-align: center;
+        margin-top: 17rem;
+    }
+}
